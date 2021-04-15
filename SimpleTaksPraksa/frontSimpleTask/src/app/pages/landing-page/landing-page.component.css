@@ -1,0 +1,26 @@
+
+.login-form {
+    max-width: 300px;
+    margin-left: 600px;
+    margin-top: 150px;
+    width: 400px;
+
+  }
+
+  .item{
+      margin-top: 20px;
+  }
+
+  .login-form-margin {
+    margin-bottom: 16px;
+  }
+
+  .login-form-forgot {
+    float: right;
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+
+

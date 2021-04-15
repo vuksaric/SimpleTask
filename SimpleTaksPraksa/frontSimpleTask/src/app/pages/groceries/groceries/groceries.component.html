@@ -1,0 +1,9 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div [fxFlex]="(100/3) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let grocery of groceries">
+          <app-grocery-card
+            [grocery]="grocery">
+          </app-grocery-card>
+        </div>
+    </div>
+  </div>

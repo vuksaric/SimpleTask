@@ -1,0 +1,34 @@
+<nz-layout>
+  <nz-header>
+    <div class="logo"></div>
+    <ul nz-menu nzTheme="dark" nzMode="horizontal" class="header-menu">
+      <li nz-menu-item >Change your profile </li>
+      <li nz-menu-item>Change your profile </li>
+      <li nz-menu-item >Change your profile </li>
+      <li nz-menu-item (click)="clearStorage()">Logout</li>
+    </ul>
+  </nz-header>
+  <nz-layout>
+    <nz-sider nzWidth="200px" nzTheme="light">
+      <ul nz-menu nzMode="inline" class="sider-menu">
+        <!--ADMIN FUNCTIONs-->
+        <li nz-menu-item >View all groceries</li>
+        <li nz-menu-item >Activated users</li>
+
+        <li nz-submenu nzTitle="Groceries" nzIcon="notification">
+            <ul>
+              <li nz-menu-item routerLink="/dashboard/viewAllGroceries">View all groceries</li>
+              <li nz-menu-item routerLink="/dashboard/createGrocery">Create grocery</li>
+              <li nz-menu-item>Delete grocery</li>
+              <li nz-menu-item>Update grocery</li>
+            </ul>
+          </li>
+      </ul> 
+    </nz-sider>
+    <nz-layout class="inner-layout">
+      <nz-content>
+        <router-outlet></router-outlet>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+</nz-layout>
